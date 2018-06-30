@@ -64,7 +64,7 @@ class Exchange:
         if self.buys_info[bb]["sizes"][buy_id]==0:
             self.buys_info[bb]["ids"]=self.buys_info[bb]["ids"][1:]
             del self.buys_info[bb]["sizes"][buy_id]
-        if self.sells_info[self.sells_prices[0]]["sizes"][sell_id]==0:
+        if self.sells_info[bs]["sizes"][sell_id]==0:
             self.sells_info[bs]["ids"]=self.sells_info[bs]["ids"][1:]
             del self.sells_info[bs]["sizes"][sell_id]
         self.matchOrders()
